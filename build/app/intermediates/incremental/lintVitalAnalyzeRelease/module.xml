@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/android/app"
+    name=":app"
+    type="APP"
+    maven="android:app:"
+    gradle="7.1.2"
+    buildFolder="/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/app"
+    bootClassPath="/home/Amospk2/Android/Sdk/platforms/android-31/android.jar:/home/Amospk2/Android/Sdk/build-tools/30.0.3/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-31">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

@@ -1,0 +1,54 @@
+# ninja log v5
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	7f7be75ce3ac959a
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_engine.h	7f7be75ce3ac959a
+33526	40808	1658359359742747255	CMakeFiles/flutter_application_1.dir/main.cc.o	12b98e4b72c8d385
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	7f7be75ce3ac959a
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	7f7be75ce3ac959a
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	7f7be75ce3ac959a
+24789	27578	0	CMakeFiles/install.util	d52a689c125bb809
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	7f7be75ce3ac959a
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_view.h	7f7be75ce3ac959a
+24579	24789	1658681116355538746	intermediates_do_not_run/flutter_application_1	44e22c3ab0699b32
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	7f7be75ce3ac959a
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	7f7be75ce3ac959a
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	7f7be75ce3ac959a
+22966	24579	1658681116140541584	CMakeFiles/flutter_application_1.dir/my_application.cc.o	8da7d6ed764f7a07
+22977	24509	1658681116071542494	CMakeFiles/flutter_application_1.dir/flutter/generated_plugin_registrant.cc.o	b389c22b03762f71
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_value.h	7f7be75ce3ac959a
+4	22965	0	flutter/_phony_	7f7be75ce3ac959a
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	7f7be75ce3ac959a
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	7f7be75ce3ac959a
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	7f7be75ce3ac959a
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	7f7be75ce3ac959a
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	7f7be75ce3ac959a
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/libflutter_linux_gtk.so	7f7be75ce3ac959a
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	7f7be75ce3ac959a
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	7f7be75ce3ac959a
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	7f7be75ce3ac959a
+4	22965	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/libflutter_linux_gtk.so	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_engine.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_value.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_view.h	7f7be75ce3ac959a
+2	21786	0	/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	7f7be75ce3ac959a
+2	21786	0	flutter/_phony_	7f7be75ce3ac959a
+21787	23225	1658682189820361746	CMakeFiles/flutter_application_1.dir/flutter/generated_plugin_registrant.cc.o	b389c22b03762f71
+21786	23328	1658682189921360411	CMakeFiles/flutter_application_1.dir/my_application.cc.o	8da7d6ed764f7a07
+23328	23548	1658682190146357438	intermediates_do_not_run/flutter_application_1	44e22c3ab0699b32
+23548	25605	0	CMakeFiles/install.util	d52a689c125bb809

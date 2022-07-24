@@ -1,0 +1,10 @@
+/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug/bundle/flutter_application_1
+/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug/bundle/data/icudtl.dat
+/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.json
+/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug/bundle/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json
+/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug/bundle/data/flutter_assets/version.json
+/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug/bundle/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
+/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug/bundle/data/flutter_assets/kernel_blob.bin
