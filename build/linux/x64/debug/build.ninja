@@ -36,10 +36,22 @@ include CMakeFiles/rules.ninja
 
 
 #############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/build/linux/x64/debug" && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+
+#############################################
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug" && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/build/linux/x64/debug" && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -51,7 +63,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug" && /usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/build/linux/x64/debug" && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -69,7 +81,7 @@ build list_install_components: phony
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug" && /usr/bin/cmake --regenerate-during-build -S"/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux" -B"/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug"
+  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/build/linux/x64/debug" && /usr/bin/cmake --regenerate-during-build -S"/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux" -B"/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/build/linux/x64/debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -81,77 +93,65 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/build/linux/x64/debug" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
 
-
-#############################################
-# Utility command for install/strip
-
-build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug" && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build install/strip: phony CMakeFiles/install/strip.util
-
 # =============================================================================
-# Object build statements for EXECUTABLE target flutter_application_1
+# Object build statements for EXECUTABLE target calculadora_flutter
 
 
 #############################################
-# Order-only phony target for flutter_application_1
+# Order-only phony target for calculadora_flutter
 
-build cmake_object_order_depends_target_flutter_application_1: phony || flutter/flutter_assemble
+build cmake_object_order_depends_target_calculadora_flutter: phony || flutter/flutter_assemble
 
-build CMakeFiles/flutter_application_1.dir/main.cc.o: CXX_COMPILER__flutter_application_1_Debug /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/main.cc || cmake_object_order_depends_target_flutter_application_1
-  DEFINES = -DAPPLICATION_ID=\"com.example.flutter_application_1\"
-  DEP_FILE = CMakeFiles/flutter_application_1.dir/main.cc.o.d
+build CMakeFiles/calculadora_flutter.dir/main.cc.o: CXX_COMPILER__calculadora_flutter_Debug /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/main.cc || cmake_object_order_depends_target_calculadora_flutter
+  DEFINES = -DAPPLICATION_ID=\"com.example.calculadora_flutter\"
+  DEP_FILE = CMakeFiles/calculadora_flutter.dir/main.cc.o.d
   FLAGS = -g -Wall -Werror -pthread
-  INCLUDES = -I"/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral" -isystem /usr/include/gtk-3.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cairo -isystem /usr/include/pango-1.0 -isystem /usr/include/fribidi -isystem /usr/include/harfbuzz -isystem /usr/include/atk-1.0 -isystem /usr/include/pixman-1 -isystem /usr/include/uuid -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include
-  OBJECT_DIR = CMakeFiles/flutter_application_1.dir
-  OBJECT_FILE_DIR = CMakeFiles/flutter_application_1.dir
+  INCLUDES = -I"/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral" -isystem /usr/include/gtk-3.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cairo -isystem /usr/include/pango-1.0 -isystem /usr/include/fribidi -isystem /usr/include/harfbuzz -isystem /usr/include/atk-1.0 -isystem /usr/include/pixman-1 -isystem /usr/include/uuid -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include
+  OBJECT_DIR = CMakeFiles/calculadora_flutter.dir
+  OBJECT_FILE_DIR = CMakeFiles/calculadora_flutter.dir
 
-build CMakeFiles/flutter_application_1.dir/my_application.cc.o: CXX_COMPILER__flutter_application_1_Debug /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/my_application.cc || cmake_object_order_depends_target_flutter_application_1
-  DEFINES = -DAPPLICATION_ID=\"com.example.flutter_application_1\"
-  DEP_FILE = CMakeFiles/flutter_application_1.dir/my_application.cc.o.d
+build CMakeFiles/calculadora_flutter.dir/my_application.cc.o: CXX_COMPILER__calculadora_flutter_Debug /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/my_application.cc || cmake_object_order_depends_target_calculadora_flutter
+  DEFINES = -DAPPLICATION_ID=\"com.example.calculadora_flutter\"
+  DEP_FILE = CMakeFiles/calculadora_flutter.dir/my_application.cc.o.d
   FLAGS = -g -Wall -Werror -pthread
-  INCLUDES = -I"/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral" -isystem /usr/include/gtk-3.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cairo -isystem /usr/include/pango-1.0 -isystem /usr/include/fribidi -isystem /usr/include/harfbuzz -isystem /usr/include/atk-1.0 -isystem /usr/include/pixman-1 -isystem /usr/include/uuid -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include
-  OBJECT_DIR = CMakeFiles/flutter_application_1.dir
-  OBJECT_FILE_DIR = CMakeFiles/flutter_application_1.dir
+  INCLUDES = -I"/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral" -isystem /usr/include/gtk-3.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cairo -isystem /usr/include/pango-1.0 -isystem /usr/include/fribidi -isystem /usr/include/harfbuzz -isystem /usr/include/atk-1.0 -isystem /usr/include/pixman-1 -isystem /usr/include/uuid -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include
+  OBJECT_DIR = CMakeFiles/calculadora_flutter.dir
+  OBJECT_FILE_DIR = CMakeFiles/calculadora_flutter.dir
 
-build CMakeFiles/flutter_application_1.dir/flutter/generated_plugin_registrant.cc.o: CXX_COMPILER__flutter_application_1_Debug /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/generated_plugin_registrant.cc || cmake_object_order_depends_target_flutter_application_1
-  DEFINES = -DAPPLICATION_ID=\"com.example.flutter_application_1\"
-  DEP_FILE = CMakeFiles/flutter_application_1.dir/flutter/generated_plugin_registrant.cc.o.d
+build CMakeFiles/calculadora_flutter.dir/flutter/generated_plugin_registrant.cc.o: CXX_COMPILER__calculadora_flutter_Debug /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/generated_plugin_registrant.cc || cmake_object_order_depends_target_calculadora_flutter
+  DEFINES = -DAPPLICATION_ID=\"com.example.calculadora_flutter\"
+  DEP_FILE = CMakeFiles/calculadora_flutter.dir/flutter/generated_plugin_registrant.cc.o.d
   FLAGS = -g -Wall -Werror -pthread
-  INCLUDES = -I"/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral" -isystem /usr/include/gtk-3.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cairo -isystem /usr/include/pango-1.0 -isystem /usr/include/fribidi -isystem /usr/include/harfbuzz -isystem /usr/include/atk-1.0 -isystem /usr/include/pixman-1 -isystem /usr/include/uuid -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include
-  OBJECT_DIR = CMakeFiles/flutter_application_1.dir
-  OBJECT_FILE_DIR = CMakeFiles/flutter_application_1.dir/flutter
+  INCLUDES = -I"/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral" -isystem /usr/include/gtk-3.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cairo -isystem /usr/include/pango-1.0 -isystem /usr/include/fribidi -isystem /usr/include/harfbuzz -isystem /usr/include/atk-1.0 -isystem /usr/include/pixman-1 -isystem /usr/include/uuid -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include
+  OBJECT_DIR = CMakeFiles/calculadora_flutter.dir
+  OBJECT_FILE_DIR = CMakeFiles/calculadora_flutter.dir/flutter
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target flutter_application_1
+# Link build statements for EXECUTABLE target calculadora_flutter
 
 
 #############################################
-# Link the executable intermediates_do_not_run/flutter_application_1
+# Link the executable intermediates_do_not_run/calculadora_flutter
 
-build intermediates_do_not_run/flutter_application_1: CXX_EXECUTABLE_LINKER__flutter_application_1_Debug CMakeFiles/flutter_application_1.dir/main.cc.o CMakeFiles/flutter_application_1.dir/my_application.cc.o CMakeFiles/flutter_application_1.dir/flutter/generated_plugin_registrant.cc.o | /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/libflutter_linux_gtk.so /usr/lib/x86_64-linux-gnu/libgtk-3.so /usr/lib/x86_64-linux-gnu/libgdk-3.so /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so /usr/lib/x86_64-linux-gnu/libpango-1.0.so /usr/lib/x86_64-linux-gnu/libharfbuzz.so /usr/lib/x86_64-linux-gnu/libatk-1.0.so /usr/lib/x86_64-linux-gnu/libcairo-gobject.so /usr/lib/x86_64-linux-gnu/libcairo.so /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so /usr/lib/x86_64-linux-gnu/libgio-2.0.so /usr/lib/x86_64-linux-gnu/libgobject-2.0.so /usr/lib/x86_64-linux-gnu/libglib-2.0.so || flutter/flutter_assemble
+build intermediates_do_not_run/calculadora_flutter: CXX_EXECUTABLE_LINKER__calculadora_flutter_Debug CMakeFiles/calculadora_flutter.dir/main.cc.o CMakeFiles/calculadora_flutter.dir/my_application.cc.o CMakeFiles/calculadora_flutter.dir/flutter/generated_plugin_registrant.cc.o | /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/libflutter_linux_gtk.so /usr/lib/x86_64-linux-gnu/libgtk-3.so /usr/lib/x86_64-linux-gnu/libgdk-3.so /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so /usr/lib/x86_64-linux-gnu/libpango-1.0.so /usr/lib/x86_64-linux-gnu/libharfbuzz.so /usr/lib/x86_64-linux-gnu/libatk-1.0.so /usr/lib/x86_64-linux-gnu/libcairo-gobject.so /usr/lib/x86_64-linux-gnu/libcairo.so /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so /usr/lib/x86_64-linux-gnu/libgio-2.0.so /usr/lib/x86_64-linux-gnu/libgobject-2.0.so /usr/lib/x86_64-linux-gnu/libglib-2.0.so || flutter/flutter_assemble
   FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,"/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral:"  "/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/libflutter_linux_gtk.so"  /usr/lib/x86_64-linux-gnu/libgtk-3.so  /usr/lib/x86_64-linux-gnu/libgdk-3.so  /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so  /usr/lib/x86_64-linux-gnu/libpango-1.0.so  /usr/lib/x86_64-linux-gnu/libharfbuzz.so  /usr/lib/x86_64-linux-gnu/libatk-1.0.so  /usr/lib/x86_64-linux-gnu/libcairo-gobject.so  /usr/lib/x86_64-linux-gnu/libcairo.so  /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so  /usr/lib/x86_64-linux-gnu/libgio-2.0.so  /usr/lib/x86_64-linux-gnu/libgobject-2.0.so  /usr/lib/x86_64-linux-gnu/libglib-2.0.so
-  OBJECT_DIR = CMakeFiles/flutter_application_1.dir
+  LINK_LIBRARIES = -Wl,-rpath,"/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral:"  "/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/libflutter_linux_gtk.so"  /usr/lib/x86_64-linux-gnu/libgtk-3.so  /usr/lib/x86_64-linux-gnu/libgdk-3.so  /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so  /usr/lib/x86_64-linux-gnu/libpango-1.0.so  /usr/lib/x86_64-linux-gnu/libharfbuzz.so  /usr/lib/x86_64-linux-gnu/libatk-1.0.so  /usr/lib/x86_64-linux-gnu/libcairo-gobject.so  /usr/lib/x86_64-linux-gnu/libcairo.so  /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so  /usr/lib/x86_64-linux-gnu/libgio-2.0.so  /usr/lib/x86_64-linux-gnu/libgobject-2.0.so  /usr/lib/x86_64-linux-gnu/libglib-2.0.so
+  OBJECT_DIR = CMakeFiles/calculadora_flutter.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = intermediates_do_not_run/flutter_application_1
-  TARGET_PDB = flutter_application_1.dbg
+  TARGET_FILE = intermediates_do_not_run/calculadora_flutter
+  TARGET_PDB = calculadora_flutter.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/CMakeLists.txt
+# /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/CMakeLists.txt
 # =============================================================================
 
 
@@ -159,7 +159,7 @@ build intermediates_do_not_run/flutter_application_1: CXX_EXECUTABLE_LINKER__flu
 # Utility command for install/strip
 
 build flutter/CMakeFiles/install/strip.util: CUSTOM_COMMAND flutter/all
-  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug/flutter" && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/build/linux/x64/debug/flutter" && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -171,7 +171,7 @@ build flutter/install/strip: phony flutter/CMakeFiles/install/strip.util
 # Utility command for install/local
 
 build flutter/CMakeFiles/install/local.util: CUSTOM_COMMAND flutter/all
-  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug/flutter" && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/build/linux/x64/debug/flutter" && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -183,7 +183,7 @@ build flutter/install/local: phony flutter/CMakeFiles/install/local.util
 # Utility command for install
 
 build flutter/CMakeFiles/install.util: CUSTOM_COMMAND flutter/all
-  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug/flutter" && /usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/build/linux/x64/debug/flutter" && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -201,7 +201,7 @@ build flutter/list_install_components: phony
 # Utility command for rebuild_cache
 
 build flutter/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug/flutter" && /usr/bin/cmake --regenerate-during-build -S"/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux" -B"/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug"
+  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/build/linux/x64/debug/flutter" && /usr/bin/cmake --regenerate-during-build -S"/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux" -B"/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/build/linux/x64/debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -213,7 +213,7 @@ build flutter/rebuild_cache: phony flutter/CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build flutter/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug/flutter" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/build/linux/x64/debug/flutter" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -223,27 +223,27 @@ build flutter/edit_cache: phony flutter/CMakeFiles/edit_cache.util
 #############################################
 # Utility command for flutter_assemble
 
-build flutter/flutter_assemble: phony flutter/CMakeFiles/flutter_assemble /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/libflutter_linux_gtk.so /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_engine.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_call.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_response.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_value.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_view.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/flutter_linux.h flutter/_phony_
+build flutter/flutter_assemble: phony flutter/CMakeFiles/flutter_assemble /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/libflutter_linux_gtk.so /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_engine.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_method_call.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_method_response.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_value.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_view.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/flutter_linux.h flutter/_phony_
 
 
 #############################################
 # Phony custom command for flutter/CMakeFiles/flutter_assemble
 
-build flutter/CMakeFiles/flutter_assemble: phony /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/libflutter_linux_gtk.so /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_engine.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_call.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_response.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_value.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_view.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/flutter_linux.h
+build flutter/CMakeFiles/flutter_assemble: phony /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/libflutter_linux_gtk.so /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_engine.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_method_call.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_method_response.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_value.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_view.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/flutter_linux.h
 
 
 #############################################
-# Custom command for /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/libflutter_linux_gtk.so
+# Custom command for /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/libflutter_linux_gtk.so
 
-build /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/libflutter_linux_gtk.so /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_engine.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_call.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_response.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_value.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_view.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/flutter_linux.h flutter/_phony_: CUSTOM_COMMAND
-  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug/flutter" && /usr/bin/cmake -E env FLUTTER_ROOT=/home/Amospk2/Downloads/flutter "PROJECT_DIR=/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1" DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false "PACKAGE_CONFIG=/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/.dart_tool/package_config.json" "FLUTTER_TARGET=/home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/lib/main.dart" /home/Amospk2/Downloads/flutter/packages/flutter_tools/bin/tool_backend.sh linux-x64 Debug
-  DESC = Generating /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/libflutter_linux_gtk.so, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_engine.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_call.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_method_response.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_value.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/fl_view.h, /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/flutter_linux/flutter_linux.h, _phony_
+build /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/libflutter_linux_gtk.so /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_engine.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_method_call.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_method_response.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_value.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_view.h /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/flutter_linux.h flutter/_phony_: CUSTOM_COMMAND
+  COMMAND = cd "/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/build/linux/x64/debug/flutter" && /usr/bin/cmake -E env FLUTTER_ROOT=/home/Amospk2/Downloads/flutter "PROJECT_DIR=/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter" DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false "PACKAGE_CONFIG=/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/.dart_tool/package_config.json" "FLUTTER_TARGET=/home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/lib/main.dart" /home/Amospk2/Downloads/flutter/packages/flutter_tools/bin/tool_backend.sh linux-x64 Debug
+  DESC = Generating /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/libflutter_linux_gtk.so, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_engine.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_method_call.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_method_response.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_value.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/fl_view.h, /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/flutter_linux/flutter_linux.h, _phony_
   restat = 1
 
 # =============================================================================
 # Target aliases.
 
-build flutter_application_1: phony intermediates_do_not_run/flutter_application_1
+build calculadora_flutter: phony intermediates_do_not_run/calculadora_flutter
 
 build flutter_assemble: phony flutter/flutter_assemble
 
@@ -253,14 +253,14 @@ build flutter_assemble: phony flutter/flutter_assemble
 # =============================================================================
 
 #############################################
-# Folder: /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug
+# Folder: /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/build/linux/x64/debug
 
-build all: phony intermediates_do_not_run/flutter_application_1 flutter/all
+build all: phony intermediates_do_not_run/calculadora_flutter flutter/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/Amospk2/Área de trabalho/Dart-Flutter/flutter_application_1/build/linux/x64/debug/flutter
+# Folder: /home/Amospk2/Área de trabalho/Dart-Flutter/calculadora_flutter/build/linux/x64/debug/flutter
 
 build flutter/all: phony
 
@@ -271,14 +271,14 @@ build flutter/all: phony
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/CMakeLists.txt /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/CMakeLists.txt /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/generated_config.cmake /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/generated_plugins.cmake /usr/share/cmake-3.18/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.18/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.18/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.18/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.18/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.18/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.18/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.18/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.18/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.18/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.18/Modules/Compiler/Clang.cmake /usr/share/cmake-3.18/Modules/Compiler/GNU.cmake /usr/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.18/Modules/FindPackageMessage.cmake /usr/share/cmake-3.18/Modules/FindPkgConfig.cmake /usr/share/cmake-3.18/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.18/Modules/Platform/Linux.cmake /usr/share/cmake-3.18/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.18.4/CMakeCXXCompiler.cmake CMakeFiles/3.18.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/CMakeLists.txt /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/CMakeLists.txt /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/generated_config.cmake /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/generated_plugins.cmake /usr/share/cmake-3.18/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.18/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.18/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.18/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.18/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.18/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.18/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.18/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.18/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.18/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.18/Modules/Compiler/Clang.cmake /usr/share/cmake-3.18/Modules/Compiler/GNU.cmake /usr/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.18/Modules/FindPackageMessage.cmake /usr/share/cmake-3.18/Modules/FindPkgConfig.cmake /usr/share/cmake-3.18/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.18/Modules/Platform/Linux.cmake /usr/share/cmake-3.18/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.18.4/CMakeCXXCompiler.cmake CMakeFiles/3.18.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/CMakeLists.txt /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/CMakeLists.txt /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/ephemeral/generated_config.cmake /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/flutter_application_1/linux/flutter/generated_plugins.cmake /usr/share/cmake-3.18/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.18/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.18/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.18/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.18/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.18/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.18/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.18/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.18/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.18/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.18/Modules/Compiler/Clang.cmake /usr/share/cmake-3.18/Modules/Compiler/GNU.cmake /usr/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.18/Modules/FindPackageMessage.cmake /usr/share/cmake-3.18/Modules/FindPkgConfig.cmake /usr/share/cmake-3.18/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.18/Modules/Platform/Linux.cmake /usr/share/cmake-3.18/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.18.4/CMakeCXXCompiler.cmake CMakeFiles/3.18.4/CMakeSystem.cmake: phony
+build /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/CMakeLists.txt /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/CMakeLists.txt /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/ephemeral/generated_config.cmake /home/Amospk2/Área$ de$ trabalho/Dart-Flutter/calculadora_flutter/linux/flutter/generated_plugins.cmake /usr/share/cmake-3.18/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.18/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.18/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.18/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.18/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.18/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.18/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.18/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.18/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.18/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.18/Modules/Compiler/Clang.cmake /usr/share/cmake-3.18/Modules/Compiler/GNU.cmake /usr/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.18/Modules/FindPackageMessage.cmake /usr/share/cmake-3.18/Modules/FindPkgConfig.cmake /usr/share/cmake-3.18/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.18/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.18/Modules/Platform/Linux.cmake /usr/share/cmake-3.18/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.18.4/CMakeCXXCompiler.cmake CMakeFiles/3.18.4/CMakeSystem.cmake: phony
 
 
 #############################################

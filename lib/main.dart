@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/calculadora/buttons_page.dart';
+import 'package:calculadora_flutter/calculadora/buttons_page.dart';
 
 void main() {
   runApp(const MyApp());
